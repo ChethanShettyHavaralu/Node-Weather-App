@@ -12,7 +12,7 @@ const getForecast=(latitude,longitude,callback)=>{
         }
         else
         {
-            callback(undefined,body.current.weather_descriptions[0]+" .The temperature is "+body.current.temperature+". It feels like "+body.current.feelslike)
+            callback(undefined,body.current.weather_descriptions[0]+" .The temperature is "+body.current.temperature+". It feels like "+body.current.feelslike +" with humidty of "+body.current.humidity)
         }
     })
 }
